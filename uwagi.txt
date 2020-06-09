@@ -1,0 +1,6 @@
+Projekt znajduje się na bardzo wczesnym etapie. De facto nie zostały przedstawione jakiekolwiek wyniki i trudno cokolwiek skomentować.
+Podejście oparte o najpierw liczenie histogramu, a następnie użycia metod uczenia głębokiego (?) jest niepoprawne.
+Histogram mógłby być wykorzystywany do klasyfikacji jako cecha wejściowa, jednak w przypadku segmentacji nie jest to podejście poprawne.
+Proszę zauważyć, że rozaważany jest problem segmetnacji, nie detekcji.
+
+W omawianym projekcie to czy wykorzystywane są klasy i jaka jest ich struktura jest nieistotne. Zadanie nie polega na stworzeniu działającej aplikacji, a zapropowaniu algorytmu segmentacji i jego weryfikacji.
