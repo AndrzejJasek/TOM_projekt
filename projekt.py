@@ -19,17 +19,9 @@ volume2, segmentation2 = load_case("case_00002")
 volume2 = volume2.get_fdata() 
 segmentation2 = segmentation2.get_fdata()
 
-volume3, segmentation3 = load_case("case_00003")
-volume3 = volume3.get_fdata() 
-segmentation3 = segmentation3.get_fdata()
-
-volume4, segmentation4 = load_case("case_00005")
-volume4 = volume4.get_fdata() 
-segmentation4 = segmentation4.get_fdata()
-
 #wektory obrazów do treningu
-volume = [volume0, volume1, volume2, volume3]
-segmentation = [segmentation0,segmentation1,segmentation2,segmentation3]
+volume = [volume0, volume1]
+segmentation = [segmentation0,segmentation1]
 
 volume_shape = np.shape(volume0)
 segmentation_shape = np.shape(segmentation0)
@@ -47,3 +39,8 @@ cd "/Users/mikolajdobrowolski/kits19/CT_case0"
 image = plt.imread("00000.png")
 image_shape = np.shape(image)
 print(f"image shape {image_shape}")
+
+#wyświetlenie obrazów CT
+plt.imshow(volume0[150, :, :])
+
+plt.imshow(segmentation0[150, :, :])
