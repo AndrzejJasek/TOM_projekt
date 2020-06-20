@@ -36,11 +36,11 @@ visualize("case_00000", "CT_case0")
 cd "/Users/mikolajdobrowolski/kits19/CT_case0"
 
 #sprawdzenie czy obrazy są w skali szarości
-image = plt.imread("00000.png")
+image = plt.imread("00000.png", cmap = 'gray')
 image_shape = np.shape(image)
 print(f"image shape {image_shape}")
 
 #wyświetlenie obrazów CT
-plt.imshow(volume0[150, :, :])
+plt.imshow(volume0[150, :, :], cmap = 'gray')
 
 plt.imshow(segmentation0[150, :, :])
